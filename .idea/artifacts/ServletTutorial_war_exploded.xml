@@ -44,6 +44,8 @@
           <element id="library" level="project" name="Maven: org.apache.cxf:cxf-rt-ws-addr:3.4.5" />
           <element id="library" level="project" name="Maven: org.apache.cxf:cxf-rt-ws-policy:3.4.5" />
           <element id="library" level="project" name="Maven: org.apache.neethi:neethi:3.1.1" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.27" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.11.4" />
           <element id="library" level="project" name="Maven: org.apache.activemq:activemq-client:5.16.3" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.31" />
           <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1" />
