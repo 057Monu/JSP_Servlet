@@ -7,8 +7,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 @WebFilter("/addAlien")
-public class IdFilter implements Filter {
-
+public class NameFilter implements Filter {
     public void init(FilterConfig config) throws ServletException {
     }
 
@@ -17,16 +16,14 @@ public class IdFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws ServletException, IOException {
-        System.out.println("In filter");
 
+        HttpServletRequest req = (HttpServletRequest) request;
         PrintWriter out = response.getWriter();
 
-        HttpServletRequest req = (HttpServletRequest)request;
-
-        int aid = Integer.parseInt(request.getParameter("aid"));
-        if(aid > 1)
+        String name = request.getParameter("aname");
+        if(name.length() > 4)
             chain.doFilter(request, response);
         else
-            out.println("Invalid Input ");
+            out.println("Name contains more letter");
     }
 }
