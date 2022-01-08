@@ -6,12 +6,17 @@
 </head>
 <body>
 <%--<h1><%= "Hello World!" %></h1>--%>
-<form action="addAlien">
+<%--<form action="addAlien">--%>
 
-    <input type="text" name="aid" placeholder="Enter aid"><br/><br/>
-    <input type="text" name="aname" placeholder="Enter name"><br/><br/>
+<%--    <input type="text" name="aid" placeholder="Enter aid"><br/><br/>--%>
+<%--    <input type="text" name="aname" placeholder="Enter name"><br/><br/>--%>
 
-    <input type="submit">
+<%--    <input type="submit">--%>
+<%--</form>--%>
+
+<form action="upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" multiple><br/>
+    <input type="submit" value="Submit">
 </form>
 <br/>
 

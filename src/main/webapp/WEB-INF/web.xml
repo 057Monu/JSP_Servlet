@@ -22,4 +22,13 @@
         <url-pattern>/sq</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>FileUplaod</servlet-name>
+        <servlet-class>com.example.servlettutorial.FileUpload</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FileUplaod</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+
 </web-app>
